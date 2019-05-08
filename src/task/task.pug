@@ -1,0 +1,11 @@
+include ../components/task1/task1
+//- include ../components/task2/task2
+
+mixin task({task1,task2})
+    .task
+        .task__task1
+            +task1(task1)
+        .task__task2
+        //-     +task2(members)
+        .task__task3
+        .task__task4

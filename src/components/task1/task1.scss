@@ -1,0 +1,21 @@
+
+.task1 {
+
+    &__header {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+
+    &__input {
+        margin-bottom: 1rem;
+    }
+    
+    &__submit {
+        display: block;
+    }
+}

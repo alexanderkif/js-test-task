@@ -1,0 +1,15 @@
+
+include /task/task
+
+- var dataJson = require('./data.json');
+
+html
+    head
+        meta(charset='UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Front-end-task
+        link(href="img/favicon.ico" rel="icon" type="image/x-icon")
+        
+    body
+        +task(dataJson)
+        
