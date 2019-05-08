@@ -1,0 +1,52 @@
+.task1__header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.task1__label {
+  font-weight: bold; }
+
+.task1__input {
+  margin-bottom: 1rem; }
+
+.task1__submit {
+  display: block; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 1rem; }
+
+.task {
+  display: grid;
+  height: 100%;
+  min-width: 20rem;
+  grid-gap: 0.3rem;
+  grid-template-areas: "t1 t2 t2" "t4 t4 t3";
+  grid-template-columns: 1f auto 2fr;
+  grid-template-rows: minmax(100px, auto) minmax(100px, auto); }
+  @media screen and (max-width: 60rem) {
+    .task {
+      grid-template-areas: "t1" "t2" "t3" "t4";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto; } }
+  .task__task1, .task__task2, .task__task3, .task__task4 {
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 1rem; }
+  .task__task1 {
+    grid-area: t1;
+    border: 0.3rem solid #d2ffdc; }
+  .task__task2 {
+    grid-area: t2;
+    border: 0.3rem solid #ffeece; }
+  .task__task3 {
+    grid-area: t3;
+    border: 0.3rem solid #fbd3ff; }
+  .task__task4 {
+    grid-area: t4;
+    border: 0.3rem solid #d8eaff; }
+
+
+/*# sourceMappingURL=main.css.map*/
