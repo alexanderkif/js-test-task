@@ -1,6 +1,9 @@
 {
     "task1" : {
-        "header" : "Task 1"
+        "header" : "Task 1",
+        "label1" : "First number:",
+        "label2" : "Second number:",
+        "button" : "Summ"
     },
     "task2" : [
         {
