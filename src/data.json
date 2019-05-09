@@ -1,11 +1,16 @@
 {
     "task1" : {
-        "header" : "Task 1",
+        "header" : "Task 1 (summ)",
         "label1" : "First number:",
         "label2" : "Second number:",
         "button" : "Summ"
     },
-    "task2" : [
+    "task2" : {
+        "header" : "Task 2 (chess knight moves)",
+        "label" : "Start position:",
+        "button" : "Ok"
+    },
+    "task3" : [
         {
             "user" : "odd user", 
             "color" : "lightgreen",
