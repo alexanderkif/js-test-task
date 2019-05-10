@@ -31,6 +31,36 @@
 .task2__submit {
   display: block; }
 
+.task3__header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.task3__field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 12.4rem;
+  border: 0.1rem solid lightgray;
+  border-width: 0.1rem 0 0 0.1rem; }
+
+.task3__sq {
+  height: 3rem;
+  width: 3rem;
+  border: 0.1rem solid lightgray;
+  border-width: 0 0.1rem 0.1rem 0;
+  display: flex; }
+
+.task3__submit {
+  display: block;
+  margin: 1rem 0.5rem; }
+
+.task3__timer {
+  margin: 0.5rem; }
+
+.task3__color {
+  flex: 1;
+  display: none; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
