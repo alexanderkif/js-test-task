@@ -10,16 +10,8 @@
         "label" : "Start position:",
         "button" : "Ok"
     },
-    "task3" : [
-        {
-            "user" : "odd user", 
-            "color" : "lightgreen",
-            "text" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        },
-        {
-            "user" : "even user", 
-            "color" : "aquamarine",
-            "text" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-    ]
+    "task3" : {
+        "header" : "Task 3 (find pair)",
+        "button" : "Start"
+    }
 }

@@ -1,0 +1,11 @@
+
+mixin task3({header, button})
+    .task3
+        .task3__header= header
+        .task3__field.js-task3__field
+            - var n = 0
+            while n < 16
+                .task3__sq(class=`js-task3__sq${n++}`)
+                    .task3__color
+        input.task3__submit.js-task3__submit(type="button", value=button)
+        .task3__timer.js-task3__timer 00:00.000
