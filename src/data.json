@@ -13,5 +13,8 @@
     "task3" : {
         "header" : "Task 3 (find pair)",
         "button" : "Start"
+    },
+    "task4" : {
+        "header" : "Task 4 (view chess knight moves)"
     }
 }

@@ -1,0 +1,31 @@
+- letters = ['A','B','C','D','E','F','G','H']
+mixin task4({header})
+    .task4
+        .task4__header= header
+        .task4__field.js-task4__field
+            .task4__number
+            - var col = 0
+            while col < 8
+                .task4__letter.task4__letter_bottom-border= letters[col]
+                - col++
+            .task4__number
+            - var row = 0
+            while row < 8
+                - n = 8 - row
+                .task4__number.task4__number_right-border= n
+                - var col = 0
+                while col < 8
+                    if (row + col) % 2 == 0
+                        .task4__sq(class = `js-task4__sq-${letters[col++]}${8 - row}`)
+                    else
+                        .task4__sq.task4__sq_black(class = `js-task4__sq-${letters[col++]}${8 - row}`)
+                .task4__number= n
+                - row++
+            .task4__number
+            - var col = 0
+            while col < 8
+                .task4__letter= letters[col]
+                - col++
+            .task4__number
+                
+                

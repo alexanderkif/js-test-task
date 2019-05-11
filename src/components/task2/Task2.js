@@ -1,4 +1,5 @@
 import { bind } from 'decko';
+import KnightMoves from '../knight/KnightMoves';
 
 class Task2 {
     constructor(element) {
@@ -10,27 +11,9 @@ class Task2 {
     }
 
     @bind
-    getMoves() {
-        const boardCols = 'ABCDEFGH';
-        const boardRows = '12345678';
-        const moves = [[-1, -2], [-2, -1], [-2, 1], [1, -2], [-1, 2], [2, -1], [1, 2], [2, 1]];
-        const result = [];
-        const col = boardCols.indexOf(this.start.value.slice(0, 1).toUpperCase());
-        const row = boardRows.indexOf(this.start.value.slice(1, 2));
-        moves.forEach((move) => {
-            const newCol = move[0] + col;
-            const newRow = move[1] + row;
-            if (newCol > -1 && newCol < 8 && newRow > -1 && newRow < 8) {
-                result.push(boardCols.charAt(newCol) + boardRows.charAt(newRow));
-            }
-        });
-        return result.join(' ');
-    }
-
-    @bind
     showResult() {
-        const result = this.getMoves();
-        alert(`Possible moves to:\n${result}`);
+        const result = new KnightMoves(this.start.value);
+        alert(`Possible moves to:\n${result.join(' ')}`);
     }
 
     @bind
