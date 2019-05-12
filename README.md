@@ -2,7 +2,7 @@
 Tasks 1-4 for Bright Lynx Team
 ## How to use:
 Clone the project to your local environment: <br>
-`https://github.com/alexanderkif/js-test-task.git` <br>
+`git clone https://github.com/alexanderkif/js-test-task.git` <br>
 Install dependencies with <br>
 `npm install` <br>
 to build without running <br>
