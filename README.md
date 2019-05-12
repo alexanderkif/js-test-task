@@ -11,6 +11,8 @@ to deploy to gh-pages use <br>
 `npm run deploy`<br>
 to run local dev server use <br>
 `npm run start`<br>
+to run tests <br>
+`npm run test`<br>
 #
 ### See example:<br>
 https://alexanderkif.github.io/js-test-task/

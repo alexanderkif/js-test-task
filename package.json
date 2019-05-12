@@ -1,17 +1,18 @@
 {
-  "name": "front-end-test",
+  "name": "js-test-task",
   "version": "1.0.0",
-  "description": "front-end-test",
+  "description": "js-test-task",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "test": "mocha --require @babel/register test/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexanderkif/front-end-test.git"
+    "url": "git+https://github.com/alexanderkif/js-test-task.git"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "gh-pages": "^2.0.1",
+    "mocha": "^6.1.4",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.3.1"
   },
