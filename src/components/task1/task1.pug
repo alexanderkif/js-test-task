@@ -3,7 +3,7 @@ mixin task1({header, label1, label2, button})
     .task1
         .task1__header= header
         .task1__label= label1
-        input.task1__input.js-task1__number1.error
+        input.task1__input.js-task1__number1(value = 0.1)
         .task1__label= label2
-        input.task1__input.js-task1__number2.error
-        input.task1__submit.js-task1__submit(type="button", value=button, disabled)
+        input.task1__input.js-task1__number2(value = 0.2)
+        input.task1__submit.js-task1__submit(type="button", value=button)

@@ -3,10 +3,8 @@ import { bind } from 'decko';
 class Task1 {
     constructor(element) {
         this.number1 = element.querySelector('.js-task1__number1');
-        this.number1.value = '0.1';
         this.number1.addEventListener('keyup', this.checkInput);
         this.number2 = element.querySelector('.js-task1__number2');
-        this.number2.value = '0.2';
         this.number2.addEventListener('keyup', this.checkInput);
         this.btn = element.querySelector('.js-task1__submit');
         this.btn.addEventListener('click', this.summ);
@@ -14,8 +12,9 @@ class Task1 {
 
     @bind
     summ() {
+        const result = +(+this.number1.value + +this.number2.value).toFixed(10);
         // eslint-disable-next-line no-alert
-        alert(`Result:\n${+this.number1.value + +this.number2.value}`);
+        alert(`Result:\n${result}`);
     }
 
     @bind
