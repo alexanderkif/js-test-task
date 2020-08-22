@@ -13,7 +13,7 @@
     &__field {
         display: flex;
         flex-wrap: wrap;
-        width: 18.85rem;
+        width: 19rem;
         border: 0.1rem solid lightgray;
     }
     
@@ -33,7 +33,7 @@
     &__sq {
         height: 2rem;
         width: 2rem;
-        border: 0;
+        border-collapse: collapse;
         border: 0.1rem solid lightgray;
         border-width: 0 0.05rem 0.05rem 0;
 
